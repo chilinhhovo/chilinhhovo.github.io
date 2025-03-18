@@ -5,8 +5,9 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="icon" type="image/x-icon" src="images/IMG_1148.jpg">
+  </head>
 <style> 
 body {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
@@ -27,12 +28,16 @@ a {
   right: 100px;
 
 }
+.photo{
+  max-width:300px;
+  padding-left: 1000px;
+  position: relative;
+}
 .hero{
   display:block;
   background-color: white;
   padding-left: 60px;
-  padding-top: 60px;
-  padding-bottom: 200px;
+  padding-top: 60px
 }
 .container {
   display: grid;
@@ -100,7 +105,7 @@ h2 {
   font-size: 16px;
   letter-spacing: 2px;
   text-decoration: none;
-  text-transform: lowecase;
+  text-transform: lowercase;
   color: #000;
   cursor: pointer;
   border: 3px solid;
@@ -108,8 +113,9 @@ h2 {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  align-self:first baseline; 
-  padding: 600px;
+  align-self: first baseline; 
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 .button-54:active {
@@ -117,9 +123,18 @@ h2 {
   top: 5px;
   left: 5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .button-54 {
     padding: 0.25em 0.75em;
+  }
+}
+
+@media (max-width: 600px) {
+  .photo {
+    max-width: 60%; /* Make sure the image fits within the screen */
+    padding-left: 0; /* Remove excessive padding */
+    display: block;
+    margin: 20px auto 20px 0; /* Left align with spacing */
   }
 }
 
@@ -198,11 +213,11 @@ footer{
     </div>
 
     <div class="hero">
+      <img class='photo' src="images/IMG_1148.jpg" alt="Chi Vo">
       <p class="byline"> Data + Design </p>
       <p class="byline">MS Data @ Columbia Journalism School </p>
       <h5> Scroll down to explore my work </h5>
       <img class ="icon" src="free-arrow-down-icon-3101-thumb.png" alt="down arrow">
-      <img class='illustration' src="Untitled-Artwork 2.png" alt="Vinja by Chi Vo">
     </div>
 
     <div class="hero">
