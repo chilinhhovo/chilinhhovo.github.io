@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Untitled-Artwork 2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Chi Vo - Playground</title>
+    <style>
+      :root {
+        --text-color: #1a1a1a;
+        --background-color: #ffffff;
+        --accent-color: #0000ff;
+        --hover-color: #00ff00;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter Tight', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+      }
+
+      .return-link {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .return-link:hover {
+        color: var(--hover-color);
+      }
+
+      .return-arrow {
+        font-size: 1.2rem;
+      }
+
+      .content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .message {
+        font-size: 1.6rem;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="return-link">
+      <span class="return-arrow">←</span>
+      <span>return to Chi Vo</span>
+    </a>
+    <div class="content">
+      <div class="message">Coming soon</div>
+    </div>
+  </body>
+</html>

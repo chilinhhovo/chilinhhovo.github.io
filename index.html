@@ -5,307 +5,489 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Untitled-Artwork 2.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-  </head>
-<style> 
-body {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-  height: 100vh;
-  cursor:hover:  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="%23000000" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-}
-
-a {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" stroke="%23000000" fill="white" width="20px" height="20px" viewBox="0 0 10.04 10.04"><circle cx="5.02" cy="5.02" r="4.52"/></svg>') 10 10, auto;
-}
-.icon {
-  max-width: 50px
-}
-.illustration{
-  max-width:400px; 
-  position: fixed;
-  top: 400px;
-  right: 100px;
-
-}
-.photo{
-  max-width:300px;
-  padding-left: 1000px;
-  position: relative;
-}
-.hero{
-  display:block;
-  background-color: white;
-  padding-left: 60px;
-  padding-top: 60px
-}
-.container {
-  display: grid;
-  column-gap: 20px;
-  background-color: white;
-  padding-left: 60px;
-  padding-bottom: 100px;
-  row-gap: 20px
-}
-.container > div {
-  background-color: white;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 300px;
-  padding-bottom: 20px
-  font-size: 30px;
-  text-align: center;
-  row-gap: 20px;
-  column-gap: 20px;
-}
-
-h1 {
-    color: blue;
-    font-family: Aeonik TRIAL;
-    font-weight: bolder;
-    font-size: 50px;
-    background-color: white;
-    padding-top: 30px;
-}
-.headline{
-  color: blue;
-  font-family: Aeonik TRIAL;
-  font-weight: bolder;
-  font-size: 50px;
-  background-color: white;
-  padding-top: 30px;
-}
-h2 {
-    color: black;
-    font-family: Aeonik TRIAL;
-    font-weight: lighter;
-    font-size: 40px;
-    padding-top: 60px;
-    background-color: white;
-}
-
-.txt-right {
-    color: black;
-    font-family: Aeonik TRIAL;
-    font-style: oblique;
-    font-weight: bold;
-    position: absolute;
-    font-weight: lighter;
-    top: 20px; 
-    right: 60px;
-    font-size: 20px;
-    background-color: white;
-    text-align: right;
-    position:fixed;
-
-}
-
-.button-54 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: lowercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  align-self: first baseline; 
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-.button-54:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-@media (min-width: 600px) {
-  .button-54 {
-    padding: 0.25em 0.75em;
-  }
-}
-
-@media (max-width: 600px) {
-  .photo {
-    max-width: 60%; /* Make sure the image fits within the screen */
-    padding-left: 0; /* Remove excessive padding */
-    display: block;
-    margin: 20px auto 20px 0; /* Left align with spacing */
-  }
-}
-
-.byline {
-    font-size: 20px;
-    font-family: Aeonik Trial;
-  }
-.project {
-  font-size: 20px; 
-  font-family: Aeonik Trial;
-}
-
-p{
-    font-size: 30px;
-    font-family: Aeonik Trial;
-}
-h5{
-    font-size: 20px;
-    font-family: Aeonik Trial;
-    font-weight: lighter;
-}
-.pt-name{
-  text-align: left;
-  font-size: 20px;
-  font-family: Aeonik Trial;
-  font-weight: bolder;
-  padding-bottom: 20px;
-  color: blue;
-  text-decoration: none;
-}
-.pt-description{
-  text-align: left;
-  font-size: 20px;
-  font-family: Aeonik Trial;
-  font-weight: lighter;
-  text-decoration: none;
-}
-.links {
-  text-align: left;
-  font-size: 20px;
-  font-family: Aeonik Trial;
-  font-weight: normal;
-  text-decoration: none;
-  padding-top: 20px;
-
-}
-
-a:link {
-  color: black;
-}
-a:visited {
-  color: black;
-}
-a:hover {
-  color: green;
-}
-a:link, a:visited {
-  text-decoration: none;
-}
-footer{
-  text-align: left;
-}
-</style>
-
-  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Chi Vo</title>
+    <style>
+      :root {
+        --text-color: #1a1a1a;
+        --background-color: #ffffff;
+        --accent-color: #0000ff;
+        --hover-color: #00ff00;
+        --spacing-unit: 1rem;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter Tight', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        padding: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .nav {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        gap: 2rem;
+        z-index: 100;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: var(--text-color);
+        transition: color 0.3s ease;
+      }
+
+      .nav a:hover {
+        color: var(--hover-color);
+      }
+
+      .nav a:visited {
+        color: var(--text-color);
+      }
+
+      .nav a:visited:hover {
+        color: var(--hover-color);
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0;
+      }
+
+      .hero-left {
+        margin-bottom: 4rem;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--accent-color);
+      }
+
+      .photo {
+        width: 240px;
+        height: auto;
+        margin: 2rem 0;
+      }
+
+      .byline {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 0.5rem;
+      }
+
+      .byline.small {
+        font-size: 1.2rem;
+      }
+
+      .scroll-prompt-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 4rem;
+        gap: 1rem;
+      }
+
+      .scroll-prompt {
+        font-size: 1rem;
+        opacity: 0.6;
+      }
+
+      .scroll-arrow {
+        width: 32px;
+        height: 32px;
+        opacity: 0.6;
+        margin-left: 0;
+        color: var(--accent-color);
+      }
+
+      .portfolio-section {
+        width: 100%;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        gap: 2rem;
+      }
+
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+      }
+
+      .project-image-container {
+        position: relative;
+        margin-bottom: 1rem;
+      }
+
+      .project-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .project-image-overlay {
+        display: none;
+      }
+
+      .project-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .project-title:hover {
+        color: var(--hover-color);
+      }
+
+      .project-description {
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: var(--text-color);
+      }
+
+      .project-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .project-links a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+      }
+
+      .project-links a:hover {
+        color: var(--hover-color);
+      }
+
+      footer {
+        position: fixed;
+        bottom: 2rem;
+        left: calc((100vw - 1400px) / 2 + 2rem);
+        font-size: 0.9rem;
+        opacity: 0.6;
+        z-index: 10;
+      }
+
+      @media (min-width: 1024px) {
+        .hero {
+          flex-direction: row;
+          gap: 6rem;
+          align-items: flex-start;
+          padding: 6rem 0;
+          position: relative;
+        }
+
+        .hero-left {
+          flex: 0 0 240px;
+          position: fixed;
+          top: 6rem;
+          left: calc((100vw - 1400px) / 2 + 2rem);
+          margin-bottom: 0;
+          z-index: 10;
+          padding-right: 6rem;
+        }
+
+        .hero-left::after {
+          display: none;
+        }
+
+        .nav {
+          position: static;
+          display: flex;
+          gap: 2rem;
+          margin-top: 2rem;
+          justify-content: flex-start;
+        }
+
+        .nav a {
+          font-size: 1.2rem;
+          color: var(--text-color);
+        }
+
+        .nav a:hover {
+          color: var(--hover-color);
+        }
+
+        .portfolio-section {
+          flex: 1;
+          padding-top: 0;
+          margin-top: 0;
+          margin-left: calc(240px + 16rem);
+          position: relative;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 6rem;
+          position: relative;
+          padding-top: 6rem;
+          padding-bottom: 6rem;
+        }
+
+        .project-card {
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 0 2.5rem;
+          border-radius: 4px;
+          width: 150%;
+          margin-right: -25%;
+        }
+
+        .project-image-container {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .project-image {
+          height: 160px;
+          transition: transform 0.3s ease;
+        }
+
+        .project-image-container:hover .project-image {
+          transform: scale(1.02);
+        }
+
+        .scroll-prompt-container {
+          display: none;
+        }
+
+        .project-title {
+          font-size: 1.2rem;
+          margin: 1rem 0;
+        }
+
+        .project-description {
+          font-size: 0.9rem;
+          line-height: 1.6;
+          margin-bottom: 1rem;
+        }
+
+        .project-links {
+          margin-bottom: 2rem;
+          gap: 2rem;
+        }
+      }
+
+      @media (max-width: 1023px) {
+        .hero {
+          flex-direction: column;
+        }
+
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 1.5rem 2rem;
+        }
+
+        .nav {
+          position: fixed;
+          top: 1.5rem;
+          right: 2rem;
+          display: flex;
+          gap: 1.5rem;
+          z-index: 100;
+          background-color: #ffffff;
+          padding: 0.5rem 0;
+        }
+
+        .nav a {
+          font-size: 1rem;
+          color: var(--text-color);
+        }
+
+        .nav a:hover {
+          color: var(--hover-color);
+        }
+
+        .hero h1 {
+          font-size: 3rem;
+          margin-top: 3rem;
+        }
+
+        .photo {
+          width: 120px;
+          display: block;
+          margin: 2rem 0;
+        }
+
+        .byline {
+          font-size: 1.2rem;
+          margin-bottom: 0.75rem;
+          text-align: left;
+        }
+
+        .project-card {
+          padding: 0;
+          margin-bottom: 2rem;
+        }
+
+        .project-image-container {
+          width: 50%;
+          margin: 0;
+          display: flex;
+          justify-content: flex-start;
+        }
+
+        .project-image {
+          height: 160px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .project-title {
+          font-size: 1.1rem;
+          margin: 0.5rem 0;
+          text-align: left;
+        }
+
+        .project-description {
+          font-size: 0.85rem;
+          line-height: 1.4;
+          margin-bottom: 0.75rem;
+          text-align: left;
+        }
+
+        .project-links {
+          font-size: 0.8rem;
+          display: flex;
+          gap: 1rem;
+          justify-content: flex-start;
+        }
+
+        .portfolio-grid {
+          padding: 0 1rem;
+        }
+
+        footer {
+          position: relative;
+          left: auto;
+          bottom: auto;
+          text-align: left;
+          padding: 2rem 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="circularcursor"></div>
-    <div class="hero">
-      <h1>Chi Vo</h1>
-      <h3 class="txt-right">
-        <a> work</a>
-        <a href="mailto:cv2604@columbia.edu">contact</a>
-        <a href="https://drive.google.com/file/d/1XOIua4M3GijImz99gChEmdEatyuPb7sZ/view?usp=sharing">cv</a>
-    </div>
-
-    <div class="hero">
-      <img class='photo' src="images/IMG_1148.jpg" alt="Chi Vo">
-      <p class="byline"> Data + Design </p>
-      <p class="byline">MS Data @ Columbia Journalism School </p>
-      <h5> Scroll down to explore my work </h5>
-      <img class ="icon" src="free-arrow-down-icon-3101-thumb.png" alt="down arrow">
-    </div>
-
-    <div class="hero">
-      <h1 class="headline">Portfolio</h1>
-    </div>
-
-    <div class="container">
-      <div>
-        <p class="pt-name">
-          <a href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=drive_link"> Past life as a visual designer </a>
-        </p>
-        <p class="pt-description"> This PDF contains works I created prior to my masters degree for previous jobs, volunteering, and graphic design course</p>
-        <p class="links">
-          <a class="button-54" href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=drive_link"> view portfolio</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div>
-        <p class="pt-name">
-          <a href="https://chilinhhovo.github.io/gold_card/"> The Most Price-Inflated Item In America, The $5 Million Price Tag on the American Dream </a>
-        </p>
-        <p class="pt-description"> This repository contains the data analysis and hmtl site</p>
-        <p class="links">
-          <a class="button-54" href="https://chilinhhovo.github.io/gold_card/"> view project </a>
-        </p>
-        <p class="links">
-          <a class="button-54" href="https://github.com/chilinhhovo/gold_card">Github</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div>
-        <p class="pt-name">
-          <a href="https://chilinhhovo.github.io/bank_heist/"> The Bank That Robbed Itself, How Truong My Lan Stole $44 Billion and Shook Vietnam</a>
-        </p>
-        <p class="pt-description"> This repository contains the data analysis and hmtl site</p>
-        <p class="links">
-          <a class="button-54" href="https://chilinhhovo.github.io/bank_heist/"> view project </a>
-        </p>
-        <p class="links">
-          <a class="button-54" href="https://github.com/chilinhhovo/bank_heist">Github</a>
-        </p>
-      </div>
-    </div>
-
-      <div class="container">
-        <div>
-          <p class="pt-name">
-            <a href="https://chilinhhovo.github.io/Mercury/"> Did you know that Earth's literary and artistic giants have left their signature on Mercury? </a>
-          </p>
-          <p class="pt-description"> This repository contains the data analysis, data scrapper from NASA and Wikipedia and hmtl site</p>
-          <p class="links">
-            <a class="button-54" href="https://chilinhhovo.github.io/Mercury/"> view project </a>
-          </p>
-          <p class="links">
-            <a class="button-54" href="https://github.com/chilinhhovo/Mercury">Github</a>
-          </p>
-        </div>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Chi Vo</h1>
+        <img class='photo' src="images/IMG_1148.jpg" alt="Chi Vo">
+        <p class="byline">Data + Design</p>
+        <p class="byline small">MS Data @ Columbia Journalism School</p>
+        <nav class="nav">
+          <a href="#work">work</a>
+          <a href="mailto:cv2604@columbia.edu">email</a>
+          <a href="https://www.linkedin.com/feed/">linkedin</a>
+          <a href="https://drive.google.com/file/d/1XOIua4M3GijImz99gChEmdEatyuPb7sZ/view?usp=sharing">cv</a>
+          <a href="playground.html">playground</a>
+        </nav>
       </div>
 
-        <div class="container">
-          <div>
-            <p class="pt-name">
-              <a href="https://auto-update-web-1.onrender.com/"> NYC Community Boards scrapper </a>
-            </p>
-            <p class="pt-description"> This repository contains auto-scrapper and dataframes for Community board minutes</p>
-            <p class="links">
-              <a class="button-54" href="https://auto-update-web-1.onrender.com/"> view project </a>
-            </p>
-            <p class="links">
-              <a class="button-54" href="https://github.com/chilinhhovo/auto_update_web">Github</a>
-            </p>
-          </div>
-        </div>
+      <section id="work" class="portfolio-section">
+        <div class="portfolio-grid">
+          <article class="project-card">
+            <div class="project-image-container">
+              <img class="project-image" src="images/Past life as a visual designer.png" alt="Past life as a visual designer">
+            </div>
+            <a href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=drive_link" class="project-title">
+              Past life as a visual designer
+            </a>
+            <p class="project-description">Works created prior to my masters degree for previous jobs, volunteering, and graphic design course</p>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=drive_link">View Portfolio →</a>
+            </div>
+          </article>
 
-        <div class="container">
-          <div class="footer">
-            <div class="content">
-            <p> The end</p>
-            <p>Please scroll back to the top or <a href="https://chilinhhovo.github.io/portfolio/">click here
-            </a></p>
-          </div>
+          <article class="project-card">
+            <div class="project-image-container">
+              <img class="project-image" src="images/The Most Price-Inflated Item In America.png" alt="The Most Price-Inflated Item In America">
+            </div>
+            <a href="https://chilinhhovo.github.io/gold_card/" class="project-title">
+              The Most Price-Inflated Item In America
+            </a>
+            <p class="project-description">The $5 Million Price Tag on the American Dream</p>
+            <div class="project-links">
+              <a href="https://chilinhhovo.github.io/gold_card/">View Project →</a>
+              <a href="https://github.com/chilinhhovo/gold_card">Github →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img class="project-image" src="images/The Bank That Robbed Itself.png" alt="The Bank That Robbed Itself">
+            </div>
+            <a href="https://chilinhhovo.github.io/bank_heist/" class="project-title">
+              The Bank That Robbed Itself
+            </a>
+            <p class="project-description">How Truong My Lan Stole $44 Billion and Shook Vietnam</p>
+            <div class="project-links">
+              <a href="https://chilinhhovo.github.io/bank_heist/">View Project →</a>
+              <a href="https://github.com/chilinhhovo/bank_heist">Github →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img class="project-image" src="images/Mercury's Literary Legacy.png" alt="Mercury's Literary Legacy">
+            </div>
+            <a href="https://chilinhhovo.github.io/Mercury/" class="project-title">
+              Mercury's Literary Legacy
+            </a>
+            <p class="project-description">Earth's literary and artistic giants have left their signature on Mercury</p>
+            <div class="project-links">
+              <a href="https://chilinhhovo.github.io/Mercury/">View Project →</a>
+              <a href="https://github.com/chilinhhovo/Mercury">Github →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image-container">
+              <img class="project-image" src="images/NYC Community Boards Scraper.png" alt="NYC Community Boards Scraper">
+            </div>
+            <a href="https://auto-update-web-1.onrender.com/" class="project-title">
+              NYC Community Boards Scraper
+            </a>
+            <p class="project-description">Auto-scraper and dataframes for Community board minutes</p>
+            <div class="project-links">
+              <a href="https://auto-update-web-1.onrender.com/">View Project →</a>
+              <a href="https://github.com/chilinhhovo/auto_update_web">Github →</a>
+            </div>
+          </article>
         </div>
-        </div>
-        
+      </section>
+    </section>
+
+    <footer>
+      <p>© 2025 Chi Vo</p>
+    </footer>
   </body>
 </html>
