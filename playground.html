@@ -10,68 +10,87 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Chi Vo - Playground</title>
     <style>
-      :root {
-        --text-color: #1a1a1a;
-        --background-color: #ffffff;
-        --accent-color: #0000ff;
-        --hover-color: #00ff00;
-      }
-
-      * {
+      body, html {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        height: 100%;
+        overflow: hidden;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
-      body {
-        font-family: 'Inter Tight', sans-serif;
-        line-height: 1.6;
-        color: var(--text-color);
-        background-color: var(--background-color);
-        min-height: 100vh;
+      .fullscreen-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .featured-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
         display: flex;
         flex-direction: column;
-        padding: 2rem;
       }
 
       .return-link {
+        color: white;
         text-decoration: none;
-        color: var(--text-color);
         font-size: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        transition: color 0.3s ease;
+        padding: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
-      .return-link:hover {
-        color: var(--hover-color);
-      }
-
-      .return-arrow {
-        font-size: 1.2rem;
-      }
-
-      .content {
+      .title-container {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .message {
-        font-size: 1.6rem;
-        font-weight: 300;
+      .title {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 500;
+        background-color: white;
+        padding: 1rem 2rem;
+        border: 2px solid black;
+        text-align: center;
+        text-shadow: none;
       }
     </style>
   </head>
   <body>
-    <a href="index.html" class="return-link">
-      <span class="return-arrow">←</span>
-      <span>return to Chi Vo</span>
-    </a>
-    <div class="content">
-      <div class="message">Coming soon</div>
+    <div class="fullscreen-container">
+      <div class="video-container">
+        <video class="featured-video" autoplay loop muted playsinline>
+          <source src="images/kim.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="overlay">
+        <a href="index.html" class="return-link">← return to Chi Vo</a>
+        <div class="title-container">
+          <h1 class="title">Coming soon</h1>
+        </div>
+      </div>
     </div>
   </body>
 </html>
