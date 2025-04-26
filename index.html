@@ -18,9 +18,21 @@
         --spacing-unit: 1rem;
       }
 
-      * {
+      html {
+        touch-action: manipulation;
+        position: relative;
+        background-color: #fff;
+      }
+
+      body, html {
+        min-height: 100vh;
         margin: 0;
         padding: 0;
+      }
+
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
       }
 
@@ -334,15 +346,6 @@
           padding: 0.5rem 0;
         }
 
-        .nav a {
-          font-size: 1rem;
-          color: var(--text-color);
-        }
-
-        .nav a:hover {
-          color: var(--hover-color);
-        }
-
         .hero h1 {
           font-size: 3rem;
           margin-top: 3rem;
@@ -546,8 +549,8 @@
             <div class="project-image-container">
               <img class="project-image" src="images/cartoon.png" alt="NYC free wifi">
             </div>
-            <a href="https://chilinhhovo.github.io/cartoon/" class="project-title">
-              Work in progress: Analysis of the New Yorker's Cartoon caption contest
+            <a href="https://chilinhhovo.github.io/intro-page/" class="project-title">
+              Recipe for a good joke
             </a>
             <div class="tag-container">
               <span class="tag">Web Scraping</span>
@@ -557,7 +560,7 @@
               <span class="tag">HTML+CSS</span>
               <span class="tag">ML/AL</span>
             </div>
-            <p class="project-description">Work in progress: A gallery of cartoons from The New Yorker's caption contest, with sentiment analysis and semantic analysis. </p>
+            <p class="project-description">Analyzed a dataset of 2.3 million captions, created by researchers at NextML, then asked two AI models to generate their own captions for the same cartoon. Could machines understand humor?</p>
             <div class="project-links">
               <a href="https://chilinhhovo.github.io/cartoon/">View Project →</a>
               <a href="https://github.com/chilinhhovo/cartoon">Github →</a>
@@ -591,7 +594,7 @@
               <img class="project-image" src="images/streets-02-800x365.jpg" alt="Street view">
             </div>
             <a href="https://theuptowner.org/uptowns-dangerous-intersections-can-technology-curtail-collisions/" class="project-title">
-              Uptown’s Dangerous Intersections: Can Technology Curtail Collisions?
+              Uptown's Dangerous Intersections: Can Technology Curtail Collisions?
             </a>
             <div class="tag-container">
               <span class="tag">Transportation Story</span>
