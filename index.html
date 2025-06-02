@@ -35,28 +35,31 @@
       }
       .intro {
         max-width: 600px;
-        margin: 5rem auto 3rem auto;
-        text-align: center;
+        margin: 5rem 0 3rem 0;
+        text-align: left;
       }
       .intro h1 {
         font-family: 'Inter Tight', sans-serif;
-        font-size: 3.5rem;
+        font-size: 5rem;
         font-weight: 800;
         margin-bottom: 1.2rem;
         margin-top: 2.5rem;
         color: var(--text-color);
         letter-spacing: -0.01em;
+        text-align: left;
       }
       .intro p {
-        font-size: 10 rem;
+        font-size: 1.20rem;
         font-weight: 400;
         margin: 0.5rem 0 0.5rem 0;
         color: var(--text-color);
+        text-align: left;
       }
       .intro .links {
         margin: 1.5rem 0 0.5rem 0;
         font-size: 1rem;
         color: var(--muted-color);
+        text-align: left;
       }
       .intro .links a {
         color: var(--accent-color);
@@ -192,6 +195,7 @@
       .intro-meta {
         margin-top: 0.7rem;
         margin-bottom: 1.2rem;
+        text-align: left;
       }
       .current-school, .previous-exp {
         font-family: 'Inter Tight', sans-serif;
@@ -201,6 +205,13 @@
         letter-spacing: 0.01em;
         margin-bottom: 0.2rem;
       }
+      .project-skill-grey {
+        color: #899;
+        font-size: 0.95em;
+        font-weight: 400;
+        display: block;
+        margin-top: 0.5em;
+      }
     </style>
   </head>
   <body>
@@ -209,7 +220,7 @@
       <p>I turn complex data into clear, compelling visuals.</p>
       <div class="intro-meta">
         <div class="current-school">Currently at Columbia Journalism School</div>
-        <div class="previous-exp">Previously: Visual Designer at Cambridge Consultants (Capgemini Invent), Scottish Fiscal Commission, intern at Dentsu.</div>
+        <div class="previous-exp">Previously: Visual Designer at Cambridge Consultants (Capgemini Invent), <br> Scottish Fiscal Commission, CombiniCo and intern at Dentsu.</div>
       </div>
       <div class="links">
         <a href="mailto:cv2604@columbia.edu">email</a> ·
@@ -225,29 +236,23 @@
         <div class="project-image-container">
           <img class="project-image" src="images/Past life as a visual designer.png" alt="Past life as a visual designer">
         </div>
-        <a href="https://chilinhhovo.github.io/old_portfolio/" class="project-title">Past life as a visual designer</a>
-        <p class="project-description">Works created prior to my masters degree for previous jobs, volunteering, and graphic design.</p>
+        <a href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=sharing" class="project-title">Commercial work and personal projects</a>
+        <p class="project-description">From AI to policy to food, I turned complexity into clarity through data visualization, UI, and editorial design.<br>
+          <span class="project-skill-grey">Duration: Five years <br>Skills: Adobe Package (Illustrator, Photoshop, InDesign, Premiere Pro, After Effects), Flourish, Adobe XD, Figma, Inkscape, Excel, and visual storytelling.</span></p>
         <div class="project-links">
-          <a href="https://chilinhhovo.github.io/old_portfolio/">View Portfolio →</a>
+          <a href="https://drive.google.com/file/d/1yulYt_Sjs_8_SVwpdp2GbHNKokqUREi9/view?usp=sharing">View Portfolio →</a>
         </div>
       </article>
-      <article class="project-card">
-        <div class="project-image-container">
-          <img class="project-image" src="images/peace_treaties.png" alt="Broken Promises of Peace">
-        </div>
-        <a href="https://chilinhhovo.github.io/project_6/" class="project-title">Broken Promises of Peace</a>
-        <p class="project-description">When Peace Treaties Fail to End the Bloodshed.</p>
-        <div class="project-links">
-          <a href="https://chilinhhovo.github.io/project_6/">View Project →</a>
-          <a href="https://github.com/chilinhhovo/project_6">Github →</a>
-        </div>
-      </article>
+
+
       <article class="project-card">
         <div class="project-image-container">
           <img class="project-image" src="images/The Bank That Robbed Itself.png" alt="The Bank That Robbed Itself">
         </div>
         <a href="https://chilinhhovo.github.io/heist-5/" class="project-title">The Bank That Robbed Itself</a>
-        <p class="project-description">How Truong My Lan Stole $44 Billion and Shook Vietnam.</p>
+        <p class="project-description">Visual timeline and diagrams breaking down Vietnam’s largest bank fraud. Investigated how $44B vanished through fake loans and shell firms.
+          <span class="project-skill-grey">Duration: Two weeks <br>Storytelling • Illustration • Financial Analysis • Research • Editorial Design
+          </span></p>
         <div class="project-links">
           <a href="https://chilinhhovo.github.io/heist-5/">View Project →</a>
           <a href="https://github.com/chilinhhovo/bank_heist">Github →</a>
@@ -258,83 +263,128 @@
           <img class="project-image" src="images/all_color_squares.jpg" alt="Brewed, Branded, and Beige">
         </div>
         <a href="https://chilinhhovo.github.io/third-wave-coffee/" class="project-title">Brewed, Branded, and Beige</a>
-        <p class="project-description">Thousands of third-wave cafés across 91 cities reveal a surprisingly uniform color code for cool.</p>
+        <p class="project-description">Mapped the aesthetics and urban logic of 5,000+ cafés across 90 cities using AI vision, geospatial joins, and regression.
+          <span class="project-skill-grey">Duration: Three weeks <br> Scraping • OCR • AI Captioning • Regression • Mapping • Design</span></p>
         <div class="project-links">
           <a href="https://chilinhhovo.github.io/third-wave-coffee/">View Project →</a>
           <a href="https://github.com/chilinhhovo/third-wave-coffee">Github →</a>
         </div>
       </article>
+
       <article class="project-card">
         <div class="project-image-container">
           <img class="project-image" src="images/Mercury's Literary Legacy.png" alt="Mercury's Literary Legacy">
         </div>
         <a href="https://chilinhhovo.github.io/Mercury/" class="project-title">Mercury's Literary Legacy</a>
-        <p class="project-description">Earth's literary and artistic giants have left their signature on Mercury.</p>
+        <p class="project-description">Explored cultural bias in planetary naming. Scraped crater names, traced gender/ethnicity, and visualized global artistic legacy in space.
+          <span class="project-skill-grey">Duration: One week <br> Scraping • Data Cleaning • Google Sheets • Illustrator • Writing</span></p>
         <div class="project-links">
           <a href="https://chilinhhovo.github.io/Mercury/">View Project →</a>
           <a href="https://github.com/chilinhhovo/Mercury">Github →</a>
         </div>
       </article>
+
+
       <article class="project-card">
         <div class="project-image-container">
-          <img class="project-image" src="images/companion.png" alt="sentiment analysis of companion app">
+          <img class="project-image" src="images/peace_treaties.png" alt="Broken Promises of Peace">
         </div>
-        <a href="https://chilinhhovo.github.io/AI-companionship/" class="project-title">Loneliness and Liability: The Risks of Emotional Bonds with AI</a>
-        <p class="project-description">Assessing the trustworthiness of AI companionship apps, including Replika, Character.AI, SimSimi, and more. I built a trust rubric under guidance of professors at Columbia University. Written in collaboration with Yushuo Wang.</p>
+        <a href="https://chilinhhovo.github.io/project_6/" class="project-title">Broken Promises of Peace</a>
+        <p class="project-description">Built a React timeline exploring 300+ conflicts to test whether peace treaties actually end war.
+          <span class="project-skill-grey">Duration: Two weeks <br> Data Analysis • React • Tailwind • UCDP • Visual Design • Writing
+          </span></p>
         <div class="project-links">
-          <a href="https://chilinhhovo.github.io/AI-companionship/">View Project →</a>
-          <a href="https://chilinhhovo.github.io/methodology/">Methodology →</a>
+          <a href="https://chilinhhovo.github.io/project_6/">View Project →</a>
+          <a href="https://github.com/chilinhhovo/project_6">Github →</a>
         </div>
       </article>
+
       <article class="project-card">
         <div class="project-image-container">
           <img class="project-image" src="images/The Most Price-Inflated Item In America.png" alt="The Most Price-Inflated Item In America">
         </div>
         <a href="https://chilinhhovo.github.io/gold_card/" class="project-title">The Most Price-Inflated Item In America</a>
-        <p class="project-description">The $5 Million Price Tag on the American Dream.</p>
+        <p class="project-description">An illustrated explainer on Trump’s proposed $5M ‘Gold Card’ visa, translating policy into Birkin bags, burgers, and years of retirement.
+          <span class="project-skill-grey">Duration: Less than one week <br> Storytelling • Editorial Design • Illustrations • Datawrapper • HTML/CSS • ai2html
+          </span></p>
+        <div class="project-links">
         <div class="project-links">
           <a href="https://chilinhhovo.github.io/gold_card/">View Project →</a>
           <a href="https://github.com/chilinhhovo/gold_card">Github →</a>
         </div>
       </article>
+
       <article class="project-card">
         <div class="project-image-container">
-          <img class="project-image" src="images/cartoon.png" alt="NYC free wifi">
+          <img class="project-image" src="images/companion.png" alt="sentiment analysis of companion app">
         </div>
-        <a href="https://chilinhhovo.github.io/intro-page/" class="project-title">Recipe for a good joke</a>
-        <p class="project-description">Analyzed a dataset of 2.3 million captions, created by researchers at NextML, then asked two AI models to generate their own captions for the same cartoon. Could machines understand humor?</p>
+        <a href="https://chilinhhovo.github.io/AI-companionship/" class="project-title">Loneliness and Liability: The Risks of Emotional Bonds with AI</a>
+        <p class="project-description">Tested 5 AI companionship apps against suicide response standards; uncovered major safety failures and ethical blind spots.
+          <span class="project-skill-grey">Duration: One month <br> Research • Rubric building • Testing Framework • Policy Reporting • Sentiment Analysis • Editorial Writing
+          </span></p>
         <div class="project-links">
-          <a href="https://chilinhhovo.github.io/cartoon/">View Project →</a>
-          <a href="https://github.com/chilinhhovo/cartoon">Github →</a>
+          <a href="https://chilinhhovo.github.io/AI-companionship/">View Project →</a>
+          <a href="https://chilinhhovo.github.io/methodology/">Methodology →</a>
         </div>
       </article>
-      <article class="project-card">
-        <div class="project-image-container">
-          <img class="project-image" src="images/NYC_free_wifi.png" alt="NYC free wifi">
-        </div>
-        <a href="https://chilinhhovo.github.io/NYC_free_wifi/" class="project-title">Free WiFi in NYC search</a>
-        <p class="project-description">A search website for free WiFi in NYC.</p>
-        <div class="project-links">
-          <a href="https://chilinhhovo.github.io/NYC_free_wifi/">View Project →</a>
-          <a href="https://github.com/chilinhhovo/NYC_free_wifi">Github →</a>
-        </div>
-      </article>
+
       <article class="project-card">
         <div class="project-image-container">
           <img class="project-image" src="images/streets-02-800x365.jpg" alt="Street view">
         </div>
         <a href="https://theuptowner.org/uptowns-dangerous-intersections-can-technology-curtail-collisions/" class="project-title">Uptown's Dangerous Intersections: Can Technology Curtail Collisions?</a>
-        <p class="project-description">Neighborhoods north of 110th Street have the highest number of deadly motor collisions. Researchers have started testing technology that could help. Chi Vo reports.</p>
+        <p class="project-description">
+          Mapped 4,500+ collisions across Upper Manhattan using NYC Open Data and interviewed AI researchers on tech-led traffic safety.
+          <span class="project-skill-grey">Duration: Two weeks <br> Investigative Reporting • Open Data • Geospatial Analysis • Interviewing • Urban Infrastructure
+          </span>
+        </p>
         <div class="project-links">
           <a href="https://theuptowner.org/uptowns-dangerous-intersections-can-technology-curtail-collisions/">View Published Article →</a>
         </div>
       </article>
+
+
+      <article class="project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="images/NYC_free_wifi.png" alt="NYC free wifi">
+        </div>
+        <a href="https://chilinhhovo.github.io/NYC_free_wifi/" class="project-title">Free WiFi in NYC search</a>
+        <p class="project-description">
+          Mapped 3,000+ public Wi-Fi hotspots across NYC using cleaned open data and interactive search powered by Leaflet.js.
+          <span class="project-skill-grey">Duration: One week <br> Data Cleaning • Leaflet.js • JavaScript • HTML/CSS • Front-End Mapping • Open Data
+          </span>
+        </p>
+        <div class="project-links">
+          <a href="https://chilinhhovo.github.io/NYC_free_wifi/">View Project →</a>
+          <a href="https://github.com/chilinhhovo/NYC_free_wifi">Github →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="images/cartoon.png" alt="NYC free wifi">
+        </div>
+        <a href="https://chilinhhovo.github.io/intro-page/" class="project-title">Recipe for a good joke</a>
+        <p class="project-description">Analyzed 2,000+ human and AI-generated captions using embeddings, clustering, and humor trait labeling to decode what makes jokes work.
+          <span class="project-skill-grey">Duration: Ongoing <br> NLP • Clustering • Zero-shot Classification • Humor Theory • D3.js • Scrollytelling
+          </span></p>
+        <div class="project-links">
+          <a href="https://chilinhhovo.github.io/cartoon/">View Project →</a>
+          <a href="https://github.com/chilinhhovo/intro-page/">Github →</a>
+        </div>
+      </article>
+
+
       <article class="project-card">
         <div class="project-image-container">
           <img class="project-image" src="images/NYC Community Boards Scraper.png" alt="NYC Community Boards Scraper">
         </div>
         <a href="https://auto-update-web-1.onrender.com/" class="project-title">NYC Community Boards Scraper</a>
-        <p class="project-description">Auto-scraper and dataframes for Community board minutes.</p>
+        <p class="project-description">
+          Built a Flask app that scrapes, parses, and centralizes 200+ PDF minutes from NYC community boards to support local journalism.
+          <span class="project-skill-grey">Duration: Ongoing <br> Web Scraping • PDF Parsing • Flask • pdfplumber • HTML/CSS • Civic Data • Automation
+          </span>
+          </p>
         <div class="project-links">
           <a href="https://auto-update-web-1.onrender.com/">View Project →</a>
           <a href="https://github.com/chilinhhovo/auto_update_web">Github →</a>
