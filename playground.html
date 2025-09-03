@@ -15,7 +15,7 @@
         padding: 0;
         height: 100%;
         overflow: hidden;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
       .fullscreen-container {
@@ -56,6 +56,11 @@
         font-size: 1rem;
         padding: 2rem;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s ease;
+      }
+
+      .return-link:hover {
+        opacity: 0.8;
       }
 
       .title-container {
@@ -65,15 +70,24 @@
         align-items: center;
       }
 
-      .title {
-        color: black;
-        font-size: 2.5rem;
+      .comic-link {
+        background: rgba(255, 255, 255, 0.95);
+        color: #333;
+        text-decoration: none;
+        font-size: 1.2rem;
         font-weight: 500;
-        background-color: white;
         padding: 1rem 2rem;
-        border: 2px solid black;
-        text-align: center;
+        border: 2px solid #333;
+        border-radius: 4px;
+        transition: all 0.3s ease;
         text-shadow: none;
+      }
+
+      .comic-link:hover {
+        background: #333;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
     </style>
   </head>
@@ -88,7 +102,7 @@
       <div class="overlay">
         <a href="index.html" class="return-link">← return to Chi Vo</a>
         <div class="title-container">
-          <h1 class="title">Coming soon</h1>
+          <a href="comic-flipbook.html" class="comic-link">📖 View Comic Flipbook</a>
         </div>
       </div>
     </div>
